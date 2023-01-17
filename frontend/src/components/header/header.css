@@ -1,15 +1,28 @@
+/* * {
+    font-family: 'Poppins', sans-serif;
+} */
 .header{
     background-color: #5a287d;
     color: #fff;
     display: flex;
     justify-content: center;
     position: relative;
+   
+    /* margin-top: 20px; */
 }
 
+.headerDesc{
+    margin-top: 20px;
+
+}
 .headerContainer{
     width: 100%;
     max-width: 1024px;
     margin: 20px 0px 100px 0px;
+}
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+    
 }
 .headerList{
     display: flex;
@@ -35,8 +48,9 @@
     font-weight: 500;
     border: none;
     padding: 10px;
+    /* align-items: center; */
     cursor: pointer;
-    /* margin-top: 20px; */
+    margin: 12px;
 }
 .headerSearch{
     height: 30px;
