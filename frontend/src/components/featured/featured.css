@@ -1,0 +1,29 @@
+.featured{
+    /* width: 100%; */
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.featuredItem{
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: 250px; */
+}
+.feacturedImg{
+    width: 95%;
+    height: 280px;
+    object-fit: cover;
+}
+.featuredTitles{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
