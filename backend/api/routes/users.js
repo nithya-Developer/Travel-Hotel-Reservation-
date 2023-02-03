@@ -1,9 +1,13 @@
-import express from 'express';
-import { updateUser,deleteUser,getUser,getUsers } from  "../controllers/user.js"
-import { verifyToken, verifyUser,verifyAdmin } from "../utils/verifyToken.js"
+import express from 'express'
+import {
+  updateUser,
+  deleteUser,
+  getUser,
+  getUsers,
+} from '../controllers/user.js'
+import { verifyToken, verifyUser, verifyAdmin } from '../utils/verifyToken.js'
 
-
-const router = express.Router();
+const router = express.Router()
 
 // router.get('/checkauthentication', verifyToken, (req, res, next) => {
 //     res.send("hello user, you are now logged in")
@@ -18,15 +22,15 @@ const router = express.Router();
 // })
 
 //UPDATE
-router.put("/:id", verifyUser, updateUser);
+router.put('/:id', verifyUser, updateUser)
 
 //DELETE
-router.delete("/:id", verifyUser, deleteUser);
+router.delete('/:id', verifyUser, deleteUser)
 
 //GET
-router.get("/find/:id", verifyUser, getUser);
+router.get('/find/:id', verifyUser, getUser)
 
 //GET ALL
-router.get("/", verifyAdmin, getUsers);
+router.get('/', verifyAdmin, getUsers)
 
-export default router;
+export default router
