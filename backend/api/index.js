@@ -10,6 +10,7 @@ import cookieParser from 'cookie-parser'
 const app = express()
 dotenv.config()
 
+mongoose.set("strictQuery", false);
 const connect = async () => {
   try {
     await mongoose.connect(process.env.LiveMongo)
