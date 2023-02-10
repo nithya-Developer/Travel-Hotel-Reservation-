@@ -1,6 +1,9 @@
+// import useFetch from "../../hooks/useFetch";
 import './property.css'
 
+
 const PropertyList = () => {
+
   return (
     <div className="pList">
       <div className="pListItem">
