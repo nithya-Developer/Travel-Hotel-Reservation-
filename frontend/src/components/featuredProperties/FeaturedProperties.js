@@ -1,8 +1,8 @@
-// import useFetch from "../../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
-  // const { data, loading, error } = useFetch("/hotels/countByType");
+  const { data, loading, error } = useFetch("/hotels/countByType");
 
   return (
     <div className="fp">
